@@ -1,0 +1,28 @@
+ActionBar {
+  background-color: #44CF6C;
+  color: white;
+}
+
+.layout {
+  background-color: #C6DABF;
+}
+
+.slogan {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20;
+}
+
+.btn-group {
+  flex: 3;
+}
+
+.btn {
+  color: #ffffff;
+  background-color: #44CF6C;
+  width: 100%;
+}
+
+.signup-btn {
+  background-color: #791E94;
+}
