@@ -1,17 +1,17 @@
 <Page>
     <ActionBar>
-      <Label class="action-bar-title" text="Login"></Label>
+      <Label class="action-bar-title" text="Sign Up"></Label>
     </ActionBar>
     <GridLayout class="layout" columns="*,*,*" rows="*,*,*,*,*,*,*,*,*,*">
       <Image row="1" col="1" colSpan="3" rowSpan="3" class="logo" src="~/images/logo2.png" stretch="none"
       ></Image>
-      <TextField class="input" row="5" colSpan="3" hint="Enter your email"></TextField>
+      <TextField (tap)="onTap()" class="input" row="5" colSpan="3" hint="Enter your email"></TextField>
       <TextField class="input" row="6" colSpan="3" hint="Enter your password"></TextField>
       <Button class="submit-btn" row="7" colSpan="3" text="Log In"></Button>
       <Label class="signup-redirect" row="9" colSpan="3">
         <FormattedString>
           <Span text="Don't have an account yet? "></Span>
-          <Span [nsRouterLink]="['/signup']" color="#791E94" text="Sign Up" underline="true"></Span>
+          <Span (tap)="onTap()" color="#791E94" text="Sign Up" underline="true"></Span>
         </FormattedString>
       </Label>
     </GridLayout>
