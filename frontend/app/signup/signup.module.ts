@@ -16,4 +16,4 @@ import { SignUpComponent } from "~/signup/signup.component";
         NO_ERRORS_SCHEMA
     ]
 })
-export class LoginModule { }
+export class SignUpModule { }
