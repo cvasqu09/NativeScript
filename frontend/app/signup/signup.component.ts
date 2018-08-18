@@ -11,7 +11,9 @@ export class SignUpComponent implements OnInit {
 
   constructor(private router: Router) { }
 
-  ngOnInit() { }
+  ngOnInit() { 
+    console.log("here");
+  }
 
   onTap() {
     console.log("tapped");

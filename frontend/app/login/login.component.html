@@ -8,11 +8,13 @@
       <TextField class="input" row="5" colSpan="3" hint="Enter your email"></TextField>
       <TextField class="input" row="6" colSpan="3" hint="Enter your password"></TextField>
       <Button class="submit-btn" row="7" colSpan="3" text="Log In"></Button>
-      <Label class="signup-redirect" row="9" colSpan="3">
-        <FormattedString>
-          <Span text="Don't have an account yet? "></Span>
-          <Span [nsRouterLink]="['/signup']" color="#791E94" text="Sign Up" underline="true"></Span>
-        </FormattedString>
-      </Label>
+      <StackLayout class="signup-redirect" row="9" colSpan="3" orientation="horizontal">
+        <Label text="Don't have an account yet? "></Label>
+        <Label (tap)="onTap()">
+          <FormattedString>
+            <Span [nsRouterLink]="['/signup']" color="#791E94" text="Sign Up" underline="true"></Span>
+          </FormattedString>
+        </Label>
+      </StackLayout>
     </GridLayout>
   </Page>
