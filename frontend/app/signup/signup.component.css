@@ -2,31 +2,18 @@
   background-color: #C6DABF;
 }
 
-.slogan {
-  text-align: center;
+.label {
+  vertical-align: middle;
   font-weight: bold;
-  font-size: 20;
-}
-
-.btn {
-  color: #ffffff;
-  background-color: #44CF6C;
-  width: 100%;
+  font-size: 14;
 }
 
 .input {
-  width: 80%;
+  width: 100%;
 }
 
-.submit-btn {
-  margin-top: 10;
+.btn {
+  font-size: 14;
   color: #ffffff;
   background-color: #791E94;
-  width: 80%;
 }
-
-.signup-redirect {
-  text-align: center;
-  width: 80%;
-}
-

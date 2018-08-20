@@ -7,7 +7,7 @@ import { SignUpComponent } from "~/signup/signup.component";
 @NgModule({
     imports: [
         NativeScriptCommonModule,
-        SignUpRoutingModule
+        SignUpRoutingModule,
     ],
     declarations: [
         SignUpComponent

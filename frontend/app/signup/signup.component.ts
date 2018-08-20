@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { User } from '../models/user';
 
 @Component({
   moduleId: module.id,
@@ -8,11 +9,12 @@ import { Router } from '@angular/router';
   styleUrls: ['./signup.component.css']
 })
 export class SignUpComponent implements OnInit {
+  public user: User;
 
   constructor(private router: Router) { }
 
   ngOnInit() { 
-    console.log("here");
+    this.user = new User("hello", "goodbye", "hi");
   }
 
   onTap() {

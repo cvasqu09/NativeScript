@@ -2,15 +2,21 @@
     <ActionBar>
       <Label class="action-bar-title" text="Sign Up"></Label>
     </ActionBar>
-    <GridLayout class="layout" columns="*,*,*" rows="*,*,*,*,*,*,*,*,*,*">
-      <TextField (tap)="onTap()" class="input" row="5" colSpan="3" hint="Enter your email"></TextField>
-      <TextField class="input" row="6" colSpan="3" hint="Enter your password"></TextField>
-      <Button class="submit-btn" row="7" colSpan="3" text="Log In"></Button>
-      <Label class="signup-redirect" row="9" colSpan="3">
-        <FormattedString>
-          <Span text="Don't have an account yet? "></Span>
-          <Span (tap)="onTap()" color="#791E94" text="Sign Up" underline="true"></Span>
-        </FormattedString>
-      </Label>
+    <GridLayout rows="*,*,*,*,*,*,*,*,*,*" columns="*,*,*,*,*,*" padding="20" class="layout">
+      <Label row="0" col="0" colSpan="2" class="label" text="Full name: "></Label>
+      <TextField row="0" col="2" colSpan="4" class="input" hint="Enter your full name"></TextField>
+      <Label row="1" col="0" colSpan="2" class="label" text="Email: "></Label>
+      <TextField row="1" col="2" colSpan="4" class="input" hint="Enter your email"></TextField>
+      <Label row="2" col="0" colSpan="2" class="label" text="Password: "></Label>
+      <TextField row="2" col="2" colSpan="4" class="input" hint="Enter your password" secure="true"></TextField>
+      <Label row="3" col="0" colSpan="2" class="label" text="Confirm Password: "></Label>
+      <TextField row="3" col="2" colSpan="4" class="input" hint="Re-enter your password" secure="true"></TextField>
+      <Button row="4" col="4" colSpan="2" class="btn btn-primary" text="Submit"></Button>
     </GridLayout>
+    <!-- <GridLayout columns="*,*,*,*,*,*" rows="*,*,*,*,*,*,*,*,*,*">
+      <View row="0">
+        <Label class="label" row="0" col="0" colSpan="1" text="Full name"></Label>
+        <TextField row="0" col="1" colSpan="5" hint="Enter your full name"></TextField>
+      </View>
+    </GridLayout>> -->
   </Page>
