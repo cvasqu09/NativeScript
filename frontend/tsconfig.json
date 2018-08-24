@@ -20,7 +20,8 @@
                 "./node_modules/tns-core-modules/*",
                 "./node_modules/*"
             ]
-        }
+        },
+        "outDir": "./compiled"
     },
     "exclude": [
         "node_modules",
