@@ -21,7 +21,6 @@
                 "./node_modules/*"
             ]
         },
-        "outDir": "./compiled"
     },
     "exclude": [
         "node_modules",

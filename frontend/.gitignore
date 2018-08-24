@@ -5,7 +5,7 @@ tags
 **/*.js.map
 **/*.metadata.json
 
-compiled/**/*
+**/*.js
 
 /nativescript-angular/**/*.d.ts
 /nativescript-angular/**/*.js
